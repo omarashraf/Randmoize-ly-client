@@ -1,14 +1,12 @@
 <template>
-  <!-- <h1>Home!</h1> -->
-  <button class="btn btn-success">Hey</button>
+  <nav class="navbar fixed-top navbar-dark bg-info">
+    <a class="navbar-brand" href="#!">Randomize-ly</a>
+  </nav>
 </template>
 
 <script>
 export default {
-  name: 'Home',
-  props: {
-    msg: String
-  }
+  name: 'NavBar'
 }
 </script>
 
