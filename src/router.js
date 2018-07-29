@@ -1,21 +1,27 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Skills from './components/Skills.vue'
-import About from './components/About.vue'
+import Home from './components/Home.vue'
+import List from './components/List.vue'
+import Draw from './components/Draw.vue'
 
 Vue.use(Router)
 
-// export default new Router({
-//   routes: [
-//     {
-//       path: '/',
-//       name: 'skills',
-//       component: Skills
-//     },
-//     {
-//       path: '/about',
-//       name: 'about',
-//       component: About
-//     }
-//   ]
-// })
+export default new Router({
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: Home
+    },
+    {
+      path: '/list',
+      name: 'list',
+      component: List
+    },
+    {
+      path: '/draw',
+      name: 'draw',
+      component: Draw
+    }
+  ]
+})

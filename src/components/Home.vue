@@ -4,8 +4,8 @@
       <div class="landing__sub-container">
         <div class="landing__title">Randomzing lists and knockout draws has never been easier</div>
         <div class="landing__buttons-container">
-          <button class="btn btn-success landing__buttons landing__lists-btn">Lists</button>
-          <button class="btn btn-success landing__buttons landing__draws-btn">Draws</button>
+          <router-link class="btn btn-success landing__buttons landing__lists-btn" to="/list">Lists</router-link>
+          <router-link class="btn btn-success landing__buttons landing__draws-btn" to="/draw">Draws</router-link>
         </div>
       </div>
     </div>

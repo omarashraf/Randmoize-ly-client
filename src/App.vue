@@ -1,18 +1,12 @@
 <template>
   <div id="app">
-    <!-- <nav>
-        <router-link to="/">Home</router-link> <br>
-        <router-link to="/about">About</router-link>
-      </nav>
-    <router-view/> -->
     <NavBar></NavBar>
-    <Home></Home>
+    <router-view />
     <Footer></Footer>
   </div>
 </template>
 
 <script>
-import Home from './components/Home.vue'
 import NavBar from './components/NavBar.vue'
 import Footer from './components/Footer.vue'
 
@@ -24,7 +18,6 @@ export default {
     }
   },
   components: {
-    Home,
     NavBar,
     Footer
   }
