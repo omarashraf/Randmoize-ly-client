@@ -1,16 +1,22 @@
 <template>
-  <div class="list__add-container">
+  <div class="list__add-container container-fluid bg-primary">
     <h2>Randomize a list!</h2>
     <form @submit="checkForm">
-      <div id="app">
-        <h1>Items</h1>
-          <div v-for="(item, index) in items">
-            <input v-model="item.value">
-            <button type="button" @click="removeItem(index)">Remove Item</button>
+      <div id="app" class="row">
+        <div class="col-xs-4 col-xs-offset-4" v-for="(item, index) in items">
+          <div class="input-group list__add-inputs">
+            <input type="text" class="form-control" placeholder="Enter item" v-model="item.value">
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-danger" @click="removeItem(index)">Remove</button>
+            </span>
           </div>
-          <button type="button" @click="addItem">New Item</button>
-          <button>Submit</button>
-          <button type="button" @click="show">Show</button>
+        </div>
+      </div>
+      <div class="row">
+        <button class="btn btn-default" type="button" @click="addItem">New Item</button>
+      </div>
+      <div class="row">
+        <button class="btn btn-success">Submit</button>
       </div>
     </form>
   </div>
@@ -70,4 +76,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+.list__add-container {
+  min-height: 100vh;
+}
+
+.list__add-inputs {
+  margin: 2% 0%;
+}
+
 </style>
