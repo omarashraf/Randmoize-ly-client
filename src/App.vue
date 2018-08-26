@@ -14,7 +14,7 @@ export default {
   name: 'app',
   data() {
     return {
-      msg: "Hola!"
+      msg: 'Hola!'
     }
   },
   components: {
